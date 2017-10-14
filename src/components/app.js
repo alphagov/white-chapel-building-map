@@ -17,7 +17,7 @@ module.exports = props => {
       e('link', { rel: 'stylesheet', href: 'material-components-web.css' })
     ),
     e('body', null, 
-      e('header', { className: 'mdc-toolbar' }, 
+      e('header', { className: 'mdc-toolbar mdc-toolbar--fixed' }, 
         e('div', { className: 'mdc-toolbar__row' },
           e('section', {className: 'mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-start'},
             e('a', { href: '#', className: 'material-icons mdc-toolbar__menu-icon' }),
@@ -33,7 +33,8 @@ module.exports = props => {
         e('div', { className: 'container' },
           floor === 6 ? e(Map) : e('h2', null, 'TODO')
         )
-      )
+      ),
+      e('footer', null, 'Crown Copyleft 2017. All wrongs reserved.')
     )
   )
 }

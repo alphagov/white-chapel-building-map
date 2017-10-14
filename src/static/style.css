@@ -15,6 +15,7 @@ h1,h2 {
 }
 main {
   display: block;
+  margin-top: 110px;
 }
 a {
   color: inherit;
@@ -30,4 +31,11 @@ path {
   fill: none;
   stroke: #000000;
   stroke-width: 2;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #dee0e2;
+  border-top: 10px solid #005ea5;
 }
