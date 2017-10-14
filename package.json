@@ -1,0 +1,23 @@
+{
+  "name": "white-chapel-map",
+  "version": "0.0.0",
+  "description": ":office: :globe_with_meridians: Maps of the GDS office in the white chapel building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardTowers/white-chapel-building-map.git"
+  },
+  "author": "Government Digital Service",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardTowers/white-chapel-building-map/issues"
+  },
+  "homepage": "https://github.com/richardTowers/white-chapel-building-map#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "^16.0.0"
+  }
+}
