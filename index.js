@@ -8,5 +8,6 @@ const app = express()
 const markup = ReactDOMServer.renderToStaticMarkup(
   React.createElement(Page, null, React.createElement(Map))
 )
+console.log(markup)
 app.get('/', (req, res) => res.send(`<!doctype html>${markup}`))
 app.listen(3000, () => console.log('Listening on 3000'))
