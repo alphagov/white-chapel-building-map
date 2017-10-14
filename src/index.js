@@ -8,6 +8,8 @@ const app = express()
 console.log(ReactDOMServer.renderToStaticMarkup(e(App, { floor: 6 })))
 
 app.use(express.static('src/static'))
+app.use(express.static('node_modules/material-components-web/dist/'))
+
 function sixth (req, res) {
   const markup = ReactDOMServer.renderToStaticMarkup(e(App, { floor: 6 }))
   return res.send(`<!doctype html>${markup}`)
