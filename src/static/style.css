@@ -15,7 +15,6 @@ h1,h2 {
 }
 main {
   display: block;
-  margin-top: 110px;
 }
 a {
   color: inherit;
@@ -23,19 +22,37 @@ a {
 }
 
 /* Custom styles */
+html,body {
+  background-color: #75715E;
+}
+main {
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  background-color: #272822;
+}
 .container {
   max-width: 600px;
   margin: auto;
 }
 path {
   fill: none;
-  stroke: #000000;
+  stroke: #f8f8f0;
   stroke-width: 2;
+}
+main h2 {
+  color: #F92672;
+  font-family: monospace;
+  padding: 2px;
 }
 
 footer {
-  margin-top: 50px;
   padding: 30px;
-  background-color: #dee0e2;
-  border-top: 10px solid #005ea5;
+  background-color: #75715E;
+  color: #f8f8f0;
+  border-top: 10px solid #A6E22E;
+}
+.mdc-toolbar {
+  background-color: #F92672 !important;
 }
