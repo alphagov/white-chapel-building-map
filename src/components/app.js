@@ -17,7 +17,11 @@ module.exports = props => {
     e('body', null, 
       e('h1', null, `GDS White Chapel Office Map - ${floor}th floor`),
       e('p', null, e('a', { href: `/${otherFloorWord}` }, `${otherFloor}th floor`)),
-      floor === 6 ? e(Map) : e('h2', null, 'TODO')
+      e('main', null,
+        e('div', { className: 'container' },
+          floor === 6 ? e(Map) : e('h2', null, 'TODO')
+        )
+      )
     )
   )
 }
