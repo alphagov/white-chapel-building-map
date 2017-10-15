@@ -29,11 +29,7 @@ module.exports = props => {
           )
         )
       ),
-      e('main', null,
-        e('div', { className: 'container' },
-          floor === 6 ? e(Map) : e('h2', null, 'TODO')
-        )
-      ),
+      e('main', null, e('div', { className: 'container' }, e(Map, {floor}))),
       e('footer', null, 'Crown Copyleft 2017. All wrongs reserved.')
     )
   )
