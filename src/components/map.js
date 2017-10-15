@@ -3,7 +3,7 @@ const Room = require('./room')
 const Box = require('./box')
 const CentralVoid = require('./centralVoid')
 
-const border = e('path', { d: 'M 1 1 h358v718h-358v-718z' }, null)
+const border = e(Box, { x: 1, y: 1, width: 360 - 2, height: 720 - 2 })
 
 const rooms = ({
   6: [
