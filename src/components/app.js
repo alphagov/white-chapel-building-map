@@ -12,6 +12,7 @@ module.exports = props => {
     { lang: 'en' },
     e('head', null,
       e('meta', { charSet: 'utf8' }),
+      e('meta', { name: 'viewport', content: 'width=device-width' }),
       e('title', null, `GDS White Chapel Office Map - ${floor}th floor`),
       e('link', { rel: 'stylesheet', href: 'style.css' }),
       e('link', { rel: 'stylesheet', href: 'material-components-web.css' })
