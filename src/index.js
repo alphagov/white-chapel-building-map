@@ -1,9 +1,11 @@
 const express = require('express')
+const compression = require('compression')
 const ReactDOMServer = require('react-dom/server')
 const e = require('react').createElement
 const App = require('./components/app')
 
 const app = express()
+app.use(compression())
 
 console.log(ReactDOMServer.renderToStaticMarkup(e(App, { floor: 6 })))
 

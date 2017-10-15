@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/richardTowers/white-chapel-building-map#readme",
   "dependencies": {
+    "compression": "^1.7.1",
     "express": "^4.16.2",
     "material-components-web": "^0.22.0",
     "react": "^16.0.0",
