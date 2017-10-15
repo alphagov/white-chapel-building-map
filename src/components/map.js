@@ -23,8 +23,6 @@ const rooms = floor => ({
     e(Room, {x: 270, y: 410, width: 30, height: 20}, e('h2', null, 615)),
     e(Room, {x: 270, y: 430, width: 30, height: 20}, e('h2', null, 616)),
     e(Room, {x: 60, y: 540, width: 50, height: 60}, e('h2', null, 601)),
-    e(Box, {x: 230, y: 200, width: 35, height: 50}),
-    e(Box, {x: 265, y: 200, width: 35, height: 50}),
   ],
   7: [
     e(Room, {x: 60, y: 80, width: 50, height: 50}, e('h2', null, 710)),
@@ -50,15 +48,8 @@ const rooms = floor => ({
   ]
 })[floor];
 
-const boxes = [
-  e(Box, {x: 60, y: 60, width: 240, height: 120}),
-  e(Box, {x: 120, y: 640, width: 120, height: 80}),
-  e(Box, {x: 60, y: 480, width: 240, height: 120}),
-]
-
 module.exports = props => e('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 360 720' },
   border,
   ...rooms(props.floor),
-  ...boxes,
   e(CentralVoid, null, null)
 )
