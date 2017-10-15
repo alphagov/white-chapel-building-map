@@ -31,7 +31,10 @@ module.exports = props => {
         )
       ),
       e('main', null, e('div', { className: 'container' }, e(Map, {floor}))),
-      e('footer', null, 'Crown Copyleft 2017. All wrongs reserved.')
+      e('footer', null, 'Crown Copyright 2017. ', e('a',
+        { href: 'https://github.com/richardTowers/white-chapel-building-map' },
+        'Contribute on github')
+      )
     )
   )
 }
