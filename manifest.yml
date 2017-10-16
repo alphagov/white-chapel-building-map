@@ -1,0 +1,5 @@
+---
+applications:
+- name: white-chapel-building-map
+  memory: 512M
+  instances: 2
