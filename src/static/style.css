@@ -41,6 +41,28 @@ path {
   stroke: #f8f8f0;
   stroke-width: 2;
 }
+
+div.room-details {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 400px;
+  height: 400px;
+  border: 3px solid #73AD21;
+  background-color: white;
+}
+
+div.click-me {
+  height: 100%;
+
+}
+
+div.click-me:hover {
+  background-color: #A6E22E;
+
+}
+
 main h2 {
   color: #F92672;
   font-family: monospace;

@@ -34,7 +34,10 @@ module.exports = props => {
       e('footer', null, 'Crown Copyright 2017. ', e('a',
         { href: 'https://github.com/richardTowers/white-chapel-building-map' },
         'Contribute on github')
-      )
+      ),
+      e('div', { className: 'room-details'}, e('h2', { className: 'room-details-text' }, "Here be details")),
+      e('script', { src: 'jquery.js' }),
+      e('script', { src: 'popUp.js' })
     )
   )
 }

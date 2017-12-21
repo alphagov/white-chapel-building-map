@@ -50,6 +50,9 @@ const rooms = ({
 
 module.exports = props => e('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 360 720' },
   border,
-  ...rooms[props.floor].map(room => e(Room, room, e('h2', null, room.number))),
+  ...rooms[props.floor].map(room => e(Room, room,
+    e('div', { className: "click-me" }, e('h2', { className: 'yay' }, room.number))
+
+  )),
   e(CentralVoid, null, null)
 )

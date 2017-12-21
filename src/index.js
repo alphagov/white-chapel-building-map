@@ -11,6 +11,7 @@ console.log(ReactDOMServer.renderToStaticMarkup(e(App, { floor: 6 })))
 
 app.use(express.static('src/static'))
 app.use(express.static('node_modules/material-components-web/dist/'))
+app.use(express.static('node_modules/jquery/dist'))
 
 function sixth (req, res) {
   const markup = ReactDOMServer.renderToStaticMarkup(e(App, { floor: 6 }))
