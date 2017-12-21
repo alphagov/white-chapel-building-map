@@ -1,5 +1,6 @@
 const e = require('react').createElement
 const Map = require('./map')
+const RoomDetails = require('./roomDetails')
 
 module.exports = props => {
   const { floor } = props
@@ -35,7 +36,10 @@ module.exports = props => {
         { href: 'https://github.com/richardTowers/white-chapel-building-map' },
         'Contribute on github')
       ),
-      e('div', { className: 'room-details'}, e('h2', { className: 'room-details-text' }, "Here be details")),
+      e('div', { className: 'room-details'}, [
+        e('a', { className: 'room-details-close', href: "" }, "x"),
+        e(RoomDetails),
+      ]),
       e('script', { src: 'jquery.js' }),
       e('script', { src: 'popUp.js' })
     )

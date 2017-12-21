@@ -45,12 +45,22 @@ path {
 div.room-details {
   display: none;
   position: absolute;
-  top: 80px;
-  left: 80px;
+  top: 300px;
+  left: 300px;
   width: 400px;
   height: 400px;
   border: 3px solid #73AD21;
   background-color: white;
+}
+
+a.room-details-close {
+  float: right;
+  font-size: 30px;
+}
+
+h2.room-details-header {
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 div.click-me {

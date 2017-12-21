@@ -1,13 +1,8 @@
 const e = require('react').createElement
-const Room = require('./room')
-const Box = require('./box')
-const CentralVoid = require('./centralVoid')
-
-const border = e(Box, { x: 1, y: 1, width: 360 - 2, height: 720 - 2 })
 
 const rooms = ({
   6: [
-    {number: 609, x:  60, y:  80, width:  50, height:  50},
+    {number: 609, status: "free"},
     {number: 608, x:  60, y: 130, width:  50, height:  50},
     {number: 610, x: 220, y:  60, width:  40, height:  60},
     {number: 611, x: 260, y:  60, width:  40, height: 120},
@@ -47,12 +42,7 @@ const rooms = ({
     {number: 718, x: 240, y: 480, width:  40, height:  20},
   ]
 })
-
-module.exports = props => e('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 360 720' },
-  border,
-  ...rooms[props.floor].map(room => e(Room, room,
-    e('div', { className: "click-me", id: room.number }, e('h2', { className: 'room-number' }, room.number))
-
-  )),
-  e(CentralVoid, null, null)
+module.exports = props => e('div', { className: 'room-details-container' },
+  e('h2', { className: 'room-details-header' }, "Here be details"),
+  e('p', { className: 'room-details-status' }, "status: occupied")
 )
