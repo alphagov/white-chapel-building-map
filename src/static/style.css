@@ -63,6 +63,16 @@ h2.room-details-header {
   margin-left: 20px;
 }
 
+p.room-details-status {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+ul.room-details-schedule {
+  margin-top: 20px;
+  list-style-type: circle;
+}
+
 div.click-me {
   height: 100%;
 
