@@ -59,41 +59,6 @@ const emoji = {
     {x: 160, y: 650, emoji: '🚹 '.trim()},
     {x: 200, y: 650, emoji: '🚺 '.trim()},
     {x: 180, y: 550, emoji: '🚻 '.trim()},
-    // Old pay team area
-    {x: 160, y: 200, emoji: '😭 '.trim()},
-    {x: 200, y: 200, emoji: '😭 '.trim()},
-    {x: 180, y: 220, emoji: '💀 '.trim()},
-    {x: 160, y: 240, emoji: '💷 '.trim()},
-    {x: 200, y: 240, emoji: '💷 '.trim()},
-    // PaaS
-    {x: 190, y:  15, emoji: '☁️ '.trim()},
-    {x: 220, y:  15, emoji: '☁️ '.trim()},
-    {x: 250, y:  15, emoji: '☁️ '.trim()},
-    {x: 280, y:  15, emoji: '☁️ '.trim()},
-    // Notify
-    {x: 130, y:  15, emoji: '🦃 '.trim()},
-    {x: 160, y:  15, emoji: '🦃 '.trim()},
-    // Submit
-    {x: 070, y:  15, emoji: '📋 '.trim()},
-    {x: 090, y:  15, emoji: '📋 '.trim()},
-    // New pay team area
-    {x: 320, y:  30, emoji: '💷 '.trim()},
-    {x: 320, y:  80, emoji: '💷 '.trim()},
-    {x: 320, y: 130, emoji: '💷 '.trim()},
-    // CPE
-    {x: 320, y: 180, emoji: '📞 '.trim()},
-    // Verify
-    {x: 320, y: 260, emoji: '🔰 '.trim()},
-    {x: 320, y: 310, emoji: '🔰 '.trim()},
-    {x: 320, y: 360, emoji: '🔰 '.trim()},
-    // Verify Yak
-    {x: 320, y: 410, emoji: '🐂 '.trim()},
-    // Verify
-    {x: 320, y: 460, emoji: '🔰 '.trim()},
-    {x: 320, y: 510, emoji: '🔰 '.trim()},
-    {x: 320, y: 560, emoji: '🔰 '.trim()},
-    {x: 320, y: 610, emoji: '🔰 '.trim()},
-    {x: 320, y: 660, emoji: '🔰 '.trim()},
     // Kitchen
     {x: 270, y: 560, emoji: '☕ '.trim()},
     {x: 270, y: 610, emoji: '🍵 '.trim()},
