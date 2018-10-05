@@ -1,7 +1,6 @@
 {
   "engines": {
-    "node": "6.12.2",
-    "npm": "3.10.10"
+    "node": "6.x"
   },
   "name": "white-chapel-map",
   "version": "0.0.0",
